@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function</title>
+    </head>
+    <body>
+        <h1>Properties and Methods of Object</h1>
+        <p>Javascript is an object-based language and in Javascript almost everything is an object or acts like an object.</p>
+      <script>
+      var personObj = {
+        firstname: "Suresh",
+        lastName: "Patel",
+        age: 20,
+        displayFullName: function(){
+            console.log(this.firstname, this.lastName);
+        }
+      };
+      console.log(personObj.firstname);
+      personObj.displayFullName();
+      var myArray = [9, 6, 2, 4, 3];
+      myArray.sort()
+      console.log(myArray);
+      console.log(myArray.length);
+//      console.log(personObj.firstname, personObj.lastName);
+/*function displayFirstName()
+{
+    console.log(personObj.firstname);
+}*/
+/*function dislayFullName()
+{
+ //   console.log(personObj.firstname, personObj.lastName);
+
+} */
+//displayFirstName();
+//dislayFullName();
+      </script>
+    </body>
+</html>
