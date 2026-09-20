@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reusable Code</title>
+    </head>
+    <body>
+        <h1>How to make code reusable?</h1>
+      <script>
+        function mathFunction(pNumOne, pAction, pNumTwo)
+        {
+            //console.log(pNumOne, pAction, pNumTwo);
+            /*
+           if(pAction=="+")
+           {
+            var result = pNumOne + pNumTwo;
+            console.log(result);
+           }
+           else if(pAction=="-")
+           {
+            var result = pNumOne - pNumTwo;
+            console.log(result);
+           }
+          else if(pAction=="*")
+           {
+            var result = pNumOne * pNumTwo;
+            console.log(result);
+           }
+         else if(pAction=="/")
+           {
+            var result = pNumOne / pNumTwo;
+            console.log(result);
+           }
+            */
+           var result;
+           if(pAction=="+")
+           {
+            result = pNumOne + pNumTwo;
+            console.log(result);
+           }
+           else if(pAction=="-")
+           {
+            result = pNumOne - pNumTwo;
+            console.log(result);
+           }
+          else if(pAction=="*")
+           {
+            result = pNumOne * pNumTwo;
+            console.log(result);
+           }
+         else if(pAction=="/")
+           {
+            result = pNumOne / pNumTwo;
+            console.log(result);
+           }
+           console.log(result);
+        }
+    var result = mathFunction(20, "/", 5);
+    console.log(result);
+      </script>
+    </body>
+</html>
