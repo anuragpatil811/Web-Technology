@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <h1 id="Suresh">DOM</h1>
+      <script>
+        /*
+       var personObj = {
+        firstName: "Suresh",
+        lastName: "Patel",
+        age: 29
+       }
+       personObj.firstName = "Sure"
+       console.log(personObj);
+       */
+     // console.log(document)
+     var el = document.getElementById("Suresh");
+    // console.log(el.innerText);
+    el.innerText = "Hello Suresh Patel!";
+    el.style.color = "red";
+    el.style.backgroundColor = "yellow";
+    el.style.border = "3px dotted blue";
+      </script>
+    </body>
+</html>
