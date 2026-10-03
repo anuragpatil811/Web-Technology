@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <h1 id="headerElement">DOM Event Listener</h1>
+        <button id="changeColorBtn">Change Color</button>
+      <script>
+        var btn = document.getElementById("changeColorBtn");
+        btn.addEventListener("click", function(){
+            //console.log("clicked");
+             var el = document.getElementById("headerElement");
+             el.style.color = "red";
+        });
+  //   var el = document.getElementById("suresh");
+      </script>
+    </body>
+</html>
