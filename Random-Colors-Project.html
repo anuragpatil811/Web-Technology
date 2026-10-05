@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini Project</title>
+    </head>
+    <body>
+        <h1 id="headerElement">Display Random Colors</h1>
+        <button id="changeColorBtn">Change Color</button>
+      <script>
+        var btn = document.getElementById("changeColorBtn");
+        var colorArray = ["red", "pink", "brown", "orange", "blue", "green", "purple", "cyan", "indigo", "white"];
+      //  console.log(colorArray[3]);
+
+        btn.addEventListener("click", function(){
+            var random = Math.random();
+            var mulRandom = random*10;
+        //    var result = Math.ceil(mulRandom);
+        var result = Math.floor(mulRandom);
+            console.log(result);
+             var el = document.getElementById("headerElement");
+             el.style.color = colorArray[result];
+        });
+  //   var el = document.getElementById("suresh");
+      </script>
+    </body>
+</html>
