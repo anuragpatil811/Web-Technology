@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variable Scope</title>
+    </head>
+<body>
+    <h1>What is Variable Scope?</h1>
+<script>
+var firstName = "suresh";  //Global scope
+/*function displayName()
+{
+var lastName = "patel";   //local scope
+console.log(firstName, lastName);
+}
+displayName();
+console.log(firstName);
+//console.log(lastName); */
+function displayName()
+{
+var lastName = "patel";   //local scope
+function displayFullName()
+{
+console.log(firstName, lastName);
+}
+displayFullName();
+}
+displayName();
+</script>
+</body>
+</html>
