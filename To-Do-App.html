@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do App</title>
+    </head>
+<body>
+    <!--<h1>To Do List</h1>-->
+    <input id="inputField" placeholder="To Dos">
+    <button id="submitButton">Submit</button>
+    <div id="toDoContainer">
+     
+    </div>
+<script>
+    var todos = [];
+    var todosEl = document.getElementById("toDoContainer");
+   var inputEl = document.getElementById("inputField");
+   var submitBtnEl = document.getElementById("submitButton");
+   submitBtnEl.addEventListener("click", function(){
+    var inputValue = inputEl.value;
+    todos.push(inputValue);
+    inputEl.value = "";
+    todosEl.innerHTML = "";
+    todos.reverse();
+    for(var i=0; i<todos.length; i++)
+    {
+    var displayText = (i+ 1) + ". "+  todos[i];
+    console.log(todos[i]);
+    var textNode = document.createTextNode(displayText);
+    var pElement = document.createElement("p");
+    pElement.appendChild(textNode);
+    todosEl.appendChild(pElement);
+    }       
+   });
+    /*
+    var textNode = document.createTextNode("Car Wash");
+    var pElement = document.createElement("p");
+    pElement.appendChild(textNode);
+    todosEl.appendChild(pElement); */  //This code will be used to display output without using For loop
+</script>
+</body>
+</html>
