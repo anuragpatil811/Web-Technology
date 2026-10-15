@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Declaration vs Function Expression</title>
+    </head>
+<body>
+    <h1>Difference between Function Declaration and Function Expression</h1>
+<script>
+    //function declaration
+function addTwoNumber(numOne, numTwo)
+{
+var response = numOne + numTwo;
+return response;
+}
+ var result = addTwoNumber(10, 5);
+ console.log(result);
+
+ //function expression
+var addition =  function(numOne, numTwo){
+  var res = numOne + numTwo;
+  return res;
+ };
+var result1 = addition(50, 50);
+console.log(result1);
+</script>
+</body>
+</html>
