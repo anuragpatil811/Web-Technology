@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hoisting in JavaScript</title>
+    </head>
+<body>
+    <h1>Hoisting Behaviour</h1>
+    <!--In JavaScript, all variables and function declarations are moved or hoisted to the top of their current scope, regardless
+        of where it is defined. This is the default behaviour of JavaScript interpreter which is called Hoisting. 
+    
+    Note: Declaration is hoisted but initialization cannot be hoisted-->
+<script>
+/* 
+//Example 1
+x = 10;
+console.log(x);
+var x;
+
+//Example 2
+function displayName()
+{
+x = 10;  //Initialization
+//console.log(x);
+var x;  //variable declaration
+}
+displayName();
+console.log(x); */
+
+//Example 3
+displayName();
+function displayName()
+{
+    console.log("suresh");
+}
+
+//Example 4
+na = function()
+{
+    console.log("Anurag");
+} 
+na();
+var na;
+</script>
+</body>
+</html>
